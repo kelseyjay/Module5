@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+
   </head>
 <body>
   <header>
@@ -38,13 +44,13 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs switchMenuToActive">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
               <a href="#" onclick="$dc.loadMenuCategories('chosenRandomCategory')";>
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs active"> Menu</a>
             </li>
             <li>
               <a href="#">
@@ -100,10 +106,5 @@
     </div>
   </footer>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
