@@ -231,7 +231,7 @@ h3.menu-item-title {
 
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
   .container .jumbotron {
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;

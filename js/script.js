@@ -83,8 +83,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  [buildAndShowHomeHTML],
-  true); 
+  buildAndShowHomeHTML,
+  function (reqponseText){
+    document.querySelector("#main-content")
+    .innerHTML = responseText;
+  },
+  false); 
 });
 
 // ***** <---- TODO: STEP 1: Substitute [...] ******
