@@ -1,6 +1,6 @@
 (function (global) {
 
-// Set up a namespace for our utility
+  // Set up a namespace for our utility
 var ajaxUtils = {};
 
 
@@ -50,7 +50,7 @@ function handleResponse(request,
     }
 
     if (isJsonResponse) {
-      responseHandler(JSON.parse(request.responseText));
+      responseHandler (JSON.parse(request.responseText));
     }
     else {
       responseHandler(request.responseText);
